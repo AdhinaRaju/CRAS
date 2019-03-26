@@ -49,7 +49,7 @@
             {
                 String Username=request.getParameter("txtusername");  
                 String Password=request.getParameter("txtpass");
-                out.println(Username+""+Password);
+                System.out.println(Username+""+Password);
                 String sel="select * from  tbl_login where username='"+Username+"' and password='"+Password+"'";
                 System.out.println(sel);
                 ResultSet rs=obj.select(sel);
