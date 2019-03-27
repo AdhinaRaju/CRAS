@@ -8,28 +8,61 @@
     android:background="@drawable/bg2">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/roundbt"
             android:text="Server Status"
-            android:textStyle="bold"
             android:textAlignment="center"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="71dp"
+                android:layout_height="match_parent"
+                android:text="Server id"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="141dp"
+                android:layout_height="match_parent"
+                android:text="Server Name"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="194dp"
+                android:layout_height="match_parent"
+                android:text="Status"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <ListView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/list_server" >
+            android:id="@+id/list_server"
+            android:layout_width="392dp"
+            android:layout_height="184dp"
+            android:layout_marginRight="10dp"
+            android:divider="@android:color/black"
+            android:dividerHeight="1dp">
 
 
         </ListView>

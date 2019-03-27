@@ -12,18 +12,33 @@ public class Server_Set_Get {
         return server_name;
     }
 
-    String server_start;
+    String server_status;
+    public String getServer_status() {
+        return server_status;
+    }
 
-    public String getServer_start() {return server_start; }
+    public void setServer_status(String server_status) {
+        this.server_status = server_status;
+    }
+     public void setS_name(String server_name){
+        this.server_name=server_name;
+     }
 
-    public void setServer_start(String server_start) {this.server_start = server_start;
+    String server_id;
+    public String getServer_id() {
+        return server_id;
+    }
+
+    public void setServer_id(String server_id) {
+        this.server_id = server_id;
     }
 
 
-    String server_end;
 
-    public String getServer_end() {return server_end; }
-    public void setServer_end(String server_end) { this.server_end = server_end;  }
+
+
+
+
 
 
 
